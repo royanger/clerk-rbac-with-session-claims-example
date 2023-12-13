@@ -7,7 +7,7 @@ import { setRole } from "./_actions";
 export default async function AdminDashboard(params: {
   searchParams: { search?: string };
 }) {
-  if (checkRole("admin")) {
+  if (!checkRole("admin")) {
     return redirect("/");
   }
 

@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 
-export const SearchUsers = (props: { children?: React.ReactNode } = {}) => {
+export const SearchUsers = () => {
   const router = useRouter();
   const pathname = usePathname();
 
